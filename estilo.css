@@ -1,3 +1,63 @@
+.body {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(116, 116, 116);
+    overflow: hidden;
+}
+
+/* CABEÇALHO GERAL */
+
+.cabecalho-pai {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.cabecalho-branco {
+    background-color: #fff;
+    padding: 10px;
+}
+.logo {
+    width: 280px;
+}
+.botao-conta {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.botao-conta:hover {
+    background-color: #141414;
+}
+
+.cabecalho-preto {
+    background-color: #0f0f0f;
+    padding: 3px;
+}
+.link-cabecalho {
+    text-decoration: none;
+    display: inline-block;
+}
+h3 {
+    color:#fff;
+    margin: 0%;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h3:hover {
+    color:#ff6223;
+}
+
+/* LINHA GANHADORES */
+
 .ticker-container {
     width: 100%;
     overflow: hidden;
@@ -6,3 +66,181 @@
     margin: 0%;
 }
 
+.ticker {
+    color: #fff;
+    white-space: nowrap;
+    position: relative;
+    animation: ticker-scroll 20s linear infinite; /* Ajuste a duração conforme necessário */
+}
+
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ticker-content p {
+    display: inline;
+    margin-right: 40px; /* Espaçamento entre os itens */
+    font-size: 18px;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); /* Ou escolha um valor maior para tornar a animação mais rápida */
+    }
+}
+
+.fundo-inicio {
+    margin: 0%;
+    padding: 0%;
+    height: 400px;
+    position: relative; /* Adicione esta linha para definir a posição relativa */
+}
+.botao-participar {
+    background-color: #ff6223;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    position: absolute; /* Adicione esta linha para definir a posição absoluta */
+    top: 70%; /* Define a posição vertical no centro da imagem */
+    left: 45%; /* Define a posição horizontal no centro da imagem */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    z-index: 1; /* Define um valor maior para que o botão fique por cima da imagem */
+}
+.botao-participar:hover {
+    background-color: #b13c0e;
+}
+
+/* Submenu Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0f0f0f;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Adicione a cor de fundo laranja quando o mouse estiver sobre as opções */
+.dropdown-content a:hover {
+    background-color: #ff6223;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container-pai {
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-biblioteca {
+    background-color: #141414;
+    border-radius: 5px;
+    height: 400px;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container-obter {
+    width: 100%;
+    height: 450px;
+    background-color: #141414;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.escuro {
+    
+    height: 350px;
+    background-color: #111111;
+    border-radius: 5px;
+    margin: 20px;
+}
+.escuro2 {
+    
+    height: 300px;
+    background-color: #111111;
+    border-radius: 5px;
+    margin: 20px;
+}
+.jogador-card {
+    height: 110px;
+}
+
+h4 {
+    color: #ff6223;
+    font-size: 20px;
+}
+
+.tabela-cards {
+    margin: 5px;
+}
+
+.botao-comprar {
+    background-color: #ff6223;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 100px;
+}
+.botao-comprar:hover {
+    background-color: #b13c0e;
+}
+h5 {
+    font-size: 17px;
+    color: #fff;
+    margin: 5px;
+}
+.linha-espaco {
+    color:#111111;
+    height: 10px;
+    border: none;
+}
+
+.container-selecionado {
+    width: 55%;
+    height: 450px;
+    background-color: #141414;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.escuro3 {
+    
+    height: 350px;
+    background-color: #111111;
+    border-radius: 5px;
+    margin: 20px;
+}
+.jogador-card.selecionada {
+    border: 2px solid #ff6223;
+}
+.container-config {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 70px;
+    padding: 15px;
+    width: 800px;
+}
